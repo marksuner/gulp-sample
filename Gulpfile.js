@@ -4,12 +4,13 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     server = require('gulp-server-livereload');
-
+    // autoprefixer = require('gulp-autoprefixer');
 // translate sass to css
 gulp.task('sass', function() {
     gulp.src('./sass/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}))
+        // .pipe(autoprefixer())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./dist/css'));
 });
