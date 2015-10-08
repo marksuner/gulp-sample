@@ -1,13 +1,12 @@
 {
-  "name": "first",
+  "name": "gulp-sample",
   "version": "1.0.0",
   "description": "sample psd slice to html",
-  "main": "index.html",
+  "main": "dist/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Mark Suner",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.2",
